@@ -1,0 +1,10 @@
+sources:
+  - name: visit_oita_events
+    enabled: true
+    type: html
+    url: "https://www.visit-oita.jp/events/"
+    area: "大分"
+
+settings:
+  timeout_seconds: 10
+  user_agent: "event-collector/0.1"
