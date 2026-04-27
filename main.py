@@ -1,8 +1,8 @@
 from pathlib import Path
 import logging
 import yaml
+from collectors.source_xxx import VisitOitaEventsCollector,CrossroadFukuokaCollector
 
-from collectors.source_xxx import VisitOitaEventsCollector
 from services.normalize import normalize_events
 from services.dedup import deduplicate_events
 from services.storage import (
@@ -44,6 +44,10 @@ def build_collectors(config: dict):
 
         if source_type == "html" and source_name == "visit_oita_events":
             collectors.append(VisitOitaEventsCollector(source))
+
+        elif source_type == "html" and source_name == "crossroad_fukuoka_events":
+            collectors.append(CrossroadFukuokaCollector(source))
+
         else:
             logging.warning("未対応のsourceです: type=%s name=%s", source_type, source_name)
 

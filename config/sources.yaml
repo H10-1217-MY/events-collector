@@ -5,6 +5,12 @@ sources:
     url: "https://www.visit-oita.jp/events/"
     area: "大分"
 
+  - name: crossroad_fukuoka_events
+    enabled: true
+    type: html
+    url: "https://www.crossroadfukuoka.jp/event"
+    area: "福岡"
+
 settings:
   timeout_seconds: 10
   user_agent: "event-collector/0.1"
