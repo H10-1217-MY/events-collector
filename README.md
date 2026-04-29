@@ -135,7 +135,7 @@ streamlit run app.py
 
 ### スクリーンショット
 
-![dashboard](images\104238.png)
+![dashboard](images/104238.png)
 
 ## 利用方針
 
