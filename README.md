@@ -77,6 +77,8 @@
 - データ保存
 - Streamlitによる可視化
 
+## 📁 ディレクトリ構成
+
 ```text
 events-collector/
 ├─ main.py
